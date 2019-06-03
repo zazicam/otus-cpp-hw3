@@ -1,3 +1,5 @@
+#pragma once
+
 #include "pretty.h"
 
 #define USE_PRETTY 1
