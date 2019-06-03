@@ -16,10 +16,8 @@ struct logging_allocator {
 		using other = logging_allocator<U, S>;
 	};
 
-	logging_allocator() {
-		count = 0;
-		cur = nullptr;
-		buf = nullptr;
+	logging_allocator() : count(0), buf(nullptr), cur(nullptr) {
+
 	}
 
 	~logging_allocator() = default;
