@@ -25,9 +25,7 @@ struct logging_allocator {
 	~logging_allocator() = default;
 
 	template<typename U> 
-	logging_allocator(const logging_allocator<U, S>&) throw() {
-
-	}
+	logging_allocator(const logging_allocator<U, S>&) = delete;
 
 	T *allocate(std::size_t n) {
 #ifndef USE_PRETTY
